@@ -54,6 +54,8 @@ class read_if : virtual public sc_interface
    public:
      virtual void read(char &) = 0;
      virtual int num_available() = 0;
+     int a;
+     int b;
 };
 
 class fifo : public sc_channel, public write_if, public read_if
